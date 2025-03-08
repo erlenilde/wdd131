@@ -1,0 +1,80 @@
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --font-weigh-thin: 100;
+}
+
+header div {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    height: 120px;
+    padding: 10px;
+}
+
+header section {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+header nav a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;  
+}
+
+body {
+    height: 100%;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 300px;
+    
+}
+
+.main-content {
+    background-color: rgb(209, 206, 206);
+    padding: 20px;
+    font: var(--font-weigh-thin);
+
+}
+
+.aside-content {
+    background-color: white;
+    padding: 20px;
+    font: var(--font-weigh-thin);
+}
+
+/*footer {
+    background-color: rgb(59, 59, 59);
+    color: rgb(230, 229, 229);
+    text-align: center;
+    padding: 20px;
+    height: 104px;  
+}*/
+
+footer {
+    background: rgb(59, 59, 59);
+    color: rgb(230, 229, 229);
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+    grid-row: span;
+  }
