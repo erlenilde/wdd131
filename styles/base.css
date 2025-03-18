@@ -1,0 +1,170 @@
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --font-weigh-thin: 100;
+}
+
+header div {
+    background-color: rgb(1, 5, 49);
+    color: white;
+    height: 120px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header section {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+header nav a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: larger;  
+}
+
+nav a:hover {
+	text-decoration: overline;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    flex: 1;
+    border: 2px;
+    border: 2px solid black;
+    
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(1, 5, 49);
+    color: white;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.heading h2 {
+    color: white;
+
+
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    font: var(--font-weigh-thin);
+    border: 0.5px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: larger;
+    
+
+}
+
+.profile-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px; 
+    align-items: center;
+    padding: 10px;
+
+
+}
+
+.profile-content img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+        
+}
+
+.flag-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px; 
+    align-items: top;
+    padding: 10px;
+}
+
+.flag-content img {
+    max-height: 150px;
+    width: auto;
+    
+}
+
+figcaption {
+    font-size: 14px;
+    color: gray;
+    font-style: italic;
+    margin-top: 5px; 
+}
+
+.aside-content {
+    background-color: white;
+    padding: 20px;
+    font: var(--font-weigh-thin);
+}
+
+.resource-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+
+
+footer {
+    background-color: rgb(1, 5, 49);
+    color: rgb(230, 229, 229);
+    text-align: center;
+    padding: 10px;
+    max-width: 100%;
+    width: 97.8vw;
+    margin: 0 auto;
+
+}
+
