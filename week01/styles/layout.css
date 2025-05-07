@@ -2,79 +2,71 @@
     --font-family: 'Roboto', sans-serif;
     --font-weigh-thin: 100;
 }
+ 
+ .parent {
+     display: grid;
+     grid-template: auto auto 1fr auto / 2fr 1fr;
+     height: 100vh;
+ }
 
-header div {
-    background-color: rgb(59, 59, 59);
-    color: white;
-    height: 120px;
-    padding: 10px;
-}
+ .title {
+     background-color: rgb(80, 76, 76);
+     color: white;
+     padding: 5px;
+     grid-row: 1;
+     grid-column: 1 / -1;
+     font: var(--font-family)
 
-header section {
-    background-color: black;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ }
 
-    
-}
+ .menu {
+     background-color: black;
+     padding: 5px;
+     display: flex;
+     align-items: center;
+     grid-row: 2;
+     grid-column: 1 / -1;
+     font: var(--font-weigh-thin)
+ }
 
-header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
+ .menu nav {
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     
+ }
 
-}
+ nav a {
+     color: white;
+     text-decoration: none;
+     font: var(--font-weigh-thin)
+ }
 
-header nav a {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    display: flex;
-    align-items: center;  
-}
+ .left {
+     background-color: rgb(150, 150, 150);
+     padding: 5px;
+     grid-row: 3;
+     grid-column: 1;
+     font: var(--font-weigh-thin)
 
-body {
-    height: 100%;
-}
+ }
+
+ .right {
+     padding: 5px;
+     background-color: white;
+     grid-row: 3;
+     grid-column: 2;
+     font: var(--font-weigh-thin)
+
+ }
+
+ footer {
+     background-color: rgb(80, 76, 76);
+     color: white;
+     text-align: center;
+     grid-row: 4;
+     grid-column: 1 / -1;
+     font: var(--font-weigh-thin)
 
 
-
-main {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    height: 300px;
-    
-}
-
-.main-content {
-    background-color: rgb(209, 206, 206);
-    padding: 20px;
-    font: var(--font-weigh-thin);
-
-}
-
-.aside-content {
-    background-color: white;
-    padding: 20px;
-    font: var(--font-weigh-thin);
-}
-
-/*footer {
-    background-color: rgb(59, 59, 59);
-    color: rgb(230, 229, 229);
-    text-align: center;
-    padding: 20px;
-    height: 104px;  
-}*/
-
-footer {
-    background: rgb(59, 59, 59);
-    color: rgb(230, 229, 229);
-    padding: 2rem;
-    text-align: center;
-    grid-column: 1 / 4;
-    grid-row: span;
-  }
+ }
