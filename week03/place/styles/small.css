@@ -1,0 +1,121 @@
+:root {
+    --background-color: #ca6a00ff;
+    --text-color: #021110ff;
+    --text-background: #49200bff;
+    --font-family: 'Roboto', sans-serif;
+}
+
+*{
+    font-family: var(--font-family);
+    
+}
+
+body {
+    background-color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--background-color);
+    display: flex;
+    margin: 0;
+
+}
+
+.title {
+    align-items: center;
+    text-align: center;
+    height: 7rem;
+    width: 100%;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.hero picture {
+   height: auto;
+   display: block;
+   
+}
+
+.hero picture img{
+    width: 100%;
+    height: auto;
+    display: block;
+ }
+
+ .data {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    
+}
+
+.data h2 {
+    font-weight: 900;
+}
+
+.data p {
+    display: flex;
+    align-items: center;
+    width: 260px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.label {
+    display: inline-block;
+    min-width: 120px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.value {
+    text-align: left;
+    margin-left: 8px;
+}
+
+.weather {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.icon {
+    width: 50px;
+    height: auto;
+}
+
+.icon img {
+    width: 100%;
+}
+
+.weather p {
+    display: flex;
+    align-items: center;
+    width: 260px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+footer {
+    background-color: var(--background-color);
+    padding: 1rem;
+    font-weight: 600;
+    text-align: center;
+    
+}
+

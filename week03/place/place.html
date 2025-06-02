@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Erlenilde Santos's country for WDD 131 - Dynamic Web Fundamentals.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/windchill.js" defer></script>
+        <meta name="author" content="Erlenilde Santos">
+        <title>WDD 131 - Dynamic Web Fundamentals - Erlenilde Santos</title>
+    </head>
+<body>
+        <header>
+            <div class="title">
+                <h1>Brazil</h1>
+            </div>
+        </header>
+        <main>
+            <section class="main">
+                <div class="hero">
+                    <picture>
+                    <source srcset="images/rio-large-screen.webp" media="(min-width: 768px)">
+                    <source srcset="images/rio-small-screen.webp" media="(max-width: 767px)">
+                    <img src="images/rio-large-screen.webp" alt="Rio de Janeiro">
+                    </picture>
+                </div>
+                <div class="data">
+                    <h2>Data</h2>
+                    <p><span class="label">Area:</span><span class="value"> 8.515.767 km²</span></p>
+                    <p><span class="label">Population:</span><span class="value"> 212,583,750</span></p>
+                    <p><span class="label">Capital:</span><span class="value"> Brasilia</span></p>
+                    <p><span class="label">Language:</span><span class="value"> Portuguese</span></p>
+                    <p><span class="label">Currency:</span><span class="value"> Real - BRL</span></p>
+                    <p><span class="label">Time Zone:</span><span class="value"> UTC-3</span></p>
+                    <p><span class="label">Calling Code:</span><span class="value"> +55</span></p>
+                    <p><span class="label">Internet TLD:</span><span class="value"> .br</span></p>
+                </div>
+                <div class="weather">
+                    <h2>Weather</h2>
+                    <div class="icon">
+                        <img src="images/1075473_cloud_sky_summer_sun_sunshine_icon.svg" alt="Weather Icon">
+                    </div>
+                    <p><span class="label">Temperature:</span><span class="value" id="temp">7</span>°C</p>
+                    <p><span class="label">Wind Speed:</span><span class="value" id="speed">10</span> km/h</p>
+                    <p><span class="label">Wind Chill:</span><span class="value" id="windchill"></span></p>
+
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© <span id="year"></span> Erlenilde Santos - Brazil</p>
+            <p>Todos os direitos reservados</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </footer>
+
+    
+    
+</body>
+</html>

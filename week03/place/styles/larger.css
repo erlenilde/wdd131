@@ -1,0 +1,52 @@
+@media screen and (min-width: 768px) {
+   
+    :root {
+        --background-color: #ca6a00ff;
+        --text-color: #021110ff;
+        --text-background: #49200bff;
+        --font-family: 'Roboto', sans-serif;
+    }
+    
+    *{
+        font-family: var(--font-family);
+        
+    }
+   
+    .main {
+    position: relative;
+   }
+
+   .data {
+    position: absolute;
+    top: 4rem;
+    left: 3rem;
+    background-color: rgba(255, 255, 255, 0.40);
+
+   }
+
+   .data h2 {
+    text-align: left;
+    background-color: var(--text-background);
+    color: white;
+    padding: 1rem;
+    width: 200px;
+    margin-left: -5rem;
+   }
+
+   .weather h2 {
+    text-align: left;
+    background-color: var(--text-background);
+    color: white;
+    padding: 1rem;
+    width: 200px;
+    margin-left: -5rem;
+   }
+
+   .weather {
+    position: absolute;
+    top: 25rem;
+    right: 3rem;
+    background-color: rgba(255, 255, 255, 0.40);
+
+   }
+}
