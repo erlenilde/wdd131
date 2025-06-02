@@ -1,52 +1,70 @@
 @media screen and (min-width: 768px) {
-   
+
     :root {
         --background-color: #ca6a00ff;
         --text-color: #021110ff;
         --text-background: #49200bff;
         --font-family: 'Roboto', sans-serif;
     }
-    
-    *{
+
+    * {
         font-family: var(--font-family);
-        
+
     }
-   
+
     .main {
-    position: relative;
-   }
+        position: relative;
+    }
 
-   .data {
-    position: absolute;
-    top: 4rem;
-    left: 3rem;
-    background-color: rgba(255, 255, 255, 0.40);
+    .data {
+        position: absolute;
+        top: 4rem;
+        left: 3rem;
+        background-color: rgba(255, 255, 255, 0.40);
 
-   }
+    }
 
-   .data h2 {
-    text-align: left;
-    background-color: var(--text-background);
-    color: white;
-    padding: 1rem;
-    width: 200px;
-    margin-left: -5rem;
-   }
+    .data h2 {
+        text-align: left;
+        background-color: var(--text-background);
+        color: white;
+        padding: 1rem;
+        width: 200px;
+        margin-left: -5rem;
+    }
 
-   .weather h2 {
-    text-align: left;
-    background-color: var(--text-background);
-    color: white;
-    padding: 1rem;
-    width: 200px;
-    margin-left: -5rem;
-   }
+    .weather h2::after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 2em;
+        height: 2em;
+        margin-left: 1em;
+        background-image: url("../images/1075473_cloud_sky_summer_sun_sunshine_icon.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
 
-   .weather {
-    position: absolute;
-    top: 25rem;
-    right: 3rem;
-    background-color: rgba(255, 255, 255, 0.40);
+    }
 
-   }
+    .weather h2 {
+        text-align: left;
+        background-color: var(--text-background);
+        color: white;
+        padding: 1rem;
+        width: 200px;
+        margin-left: -5rem;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .weather {
+        position: absolute;
+        top: 25rem;
+        right: 3rem;
+        background-color: rgba(255, 255, 255, 0.40);
+
+    }
 }
