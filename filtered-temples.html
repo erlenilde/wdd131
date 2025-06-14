@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple WDD131</title>
+    <meta name="description" content="Temple menu">
+    <meta name="author" content="Erlenilde Santos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <section>
+            <div class="title">
+                <h1>Temple Album</h1>
+            </div>
+            <button id="menuButton" class="hamburger">☰</button>
+            <div class="menu">
+                <nav id="mainMenu" class="hide">
+                    <ul>
+                        <li><a href="filtered-temples.html">Home</a></li>
+                        <li><a href="#" id="old">Old</a></li>
+                        <li><a href="#" id="new">New</a></li>
+                        <li><a href="#" id="large">Large</a></li>
+                        <li><a href="#" id="small">Small</a></li>
+                      </ul>
+                      
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main>
+        
+        <div class="temples" id="cards">
+            
+        </div>
+
+    </main>
+    <footer>
+        <p>© <span id="year"></span> Erlenilde Santos - Todos os direitos reservados</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
