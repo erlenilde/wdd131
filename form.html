@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forms exercise for course week 5">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="form/styles/normalize.css">
+    <link rel="stylesheet" href="form/styles/small.css">
+    <link rel="stylesheet" href="form/styles/medium.css">
+    <link rel="stylesheet" href="form/styles/large.css">
+    <script src="form/scripts/getdates.js" defer></script>
+    <script src="form/scripts/forms.js" defer></script>
+    <meta name="author" content="Erlenilde Santos">
+    <title>Product Review Form</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>Product Review</h1>
+        </div>
+    </header>
+    <main>
+        
+        <form method="get" action="review.html" class="wf1">
+            <label>Product Name
+                <select name="subject" id="productName" required>
+                    <option value="">Please Select &#9662;</option>
+                </select>
+            </label>
+            <div>Overall Rating</div>
+            <div class="radio">
+                <label>☆<input type="radio" name="audience" value="one-star" required id="one-star"></label>
+                <label>☆☆<input type="radio" name="audience" value="two-star" id="two-star"></label>
+                <label>☆☆☆<input type="radio" name="audience" value="three-star" id="three-star"></label>
+                <label>☆☆☆☆<input type="radio" name="audience" value="four-star" id="four-star"></label>
+                <label>☆☆☆☆☆<input type="radio" name="audience" value="five-star" id="five-star"></label>
+            </div>
+            <label>Date of Installation<input type="date" name="instalationDate" id="instalationDate" required></label>
+            <div>Which features did you find useful in the  product?<br><span>(Check all that apply)</span></div>
+            <label><input type="checkbox" name="durability" value="yes" id="durability">Durability</label>
+            <label><input type="checkbox" name="easy" value="yes" id="easy">Easy of Use</label>
+            <label><input type="checkbox" name="performance" value="yes" id="performance">Performance</label>
+            <label><input type="checkbox" name="design" value="yes" id="design">Design</label>
+            <label>Written Review <span>(optional)</span><textarea name="review" id="writtenReview"></textarea></label>
+            <label>Your Name<input type="text" name="name" id="name"></label>
+            <input type="submit" value="Post Review">
+        </form>
+
+            
+    </main>
+    <footer>
+        <p>© <span id="year"></span> Erlenilde Santos - Todos os direitos reservados</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+
+</body>
+
+</html>

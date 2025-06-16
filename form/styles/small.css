@@ -1,0 +1,146 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: 1.5rem 2%;
+    background-color: black;
+}
+header h1 {margin: 0; font-size: medium; text-align: center;}
+header h2 {margin: 0; font-weight: normal;}
+
+.title {
+    
+    color: white;
+    text-align: center;
+    width: 100%;
+    
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+    background-color: rgb(236, 230, 236);
+    margin-top: 1rem;
+}
+
+/*-----------FORM STYLING--------*/
+
+
+
+
+.wf1 label{
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.wf1 div{
+    padding-top: 1rem;
+    color: black;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="url"],
+.wf1 input[type="date"],
+.wf1 select,
+.wf1 input[type="number"]
+{
+    background-color: white;
+    display: block;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="checkbox"]
+{
+    margin-right: 6px;
+
+}
+
+.radio{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;   
+}
+
+.radio label{
+    padding-top: 0;
+    justify-items: center;
+}
+
+.wf1 input[type="radio"]{
+    display: block;
+    margin-top: .25rem;
+    
+}
+
+.wf1 textarea{
+    background-color: white;
+    display: block;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    height: 5rem;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="submit"]
+{
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.wf1 input:required{
+    border-left: solid 8px red;
+}
+
+.wf1 input:required:valid{
+    border-left: solid 8px green;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: black;
+    padding: .5rem 2%;
+    text-align: center;
+    color: white;
+}
