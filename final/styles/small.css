@@ -50,26 +50,36 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 1rem;
-    padding: 1rem 0;
-    margin: 0;   
-    width: 100%;
+    padding: 1rem 1rem; /* <- antes era 1rem 0 */
+    margin: 0;
     box-sizing: border-box;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     list-style: none;
+    flex: 1; /* todos os <li> ocupam a mesma largura */
+    max-width: 120px; /* limite opcional para não esticar demais */
+  }
+  
+  nav ul li button {
+    width: 100%;
+    max-width: 120px;
+    height: 3rem;
     background-color: var(--background-2);
     color: var(--background-1);
     font-weight: 700;
-    padding: 1rem;
-    border-radius: 8px;
     font-size: 0.9rem;
-    padding: 0.5rem;
+    border: none;
     border-radius: 6px;
-    
-}
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
+  nav ul li button:hover {
+    background-color: #f0b800;
+  }
 
 main {
     background-color: var(--background-2);
@@ -120,6 +130,7 @@ main {
     gap: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    text-align: left;
 }
 
 .ranking div {
@@ -128,8 +139,14 @@ main {
     background-color: white;
     color: var(--background-1);
     border-radius: 8px;
-    text-align: center;
+    text-align: left;
     font-weight: 700;
+
+}
+
+.graphic1 {
+    display: grid;
+    grid-template-columns: 4;
 }
 
 footer {
@@ -138,3 +155,84 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    text-align: center;
+}
+
+.no-style-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+#date-container {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+  }
+  
+  #date-container .date-fields {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  
+  #date-container label {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #date-container button {
+    display: block;
+    margin: 1rem auto 0 auto;
+    padding: 0.5rem 1rem;
+    background-color: #2b3d91;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .grade-receita {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    font-size: 14px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .card-receita {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .card-receita span.valor {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2b3d91;
+  }
+
+
+  
+  
+
+
+  
